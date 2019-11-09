@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HTML Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MarioClub</title>
 </head>
 <body>
-  
-  <h1>HTML Forms</h1>
 
-  <form>
-    <label for="username">enter username:</label>
-    <input type="text" id="username" name="username" placeholder="username" required>
-    <br><br>
-    <label for="email">enter email:</label>
-    <input type="email" id="email" name="email" placeholder="your email" required>
-    <br><br>
-    <label for="password">password:</label>
-    <input type="password" id="password" name="password" placeholder="choose a password" required>
-    <br><br>
-
-    <label for="gender">select your age:</label> <br>
-    
-    <input type="radio" name="age" value="0-25" id="option-1">
-    <label for="option-1">0-25</label>
-    <input type="radio" name="age" value="26-50" id="option-2">
-    <label for="option-2">26-50</label>
-    <input type="radio" name="age" value="51+" id="option-3">
-    <label for="option-3">51+</label>
-
-    <br><br>
-
-    <label for="question">security question:</label>
-    <select name="question" id="question">
-      <option value="q1">what colour are your favourite pair of socks</option>
-      <option value="q2">if you could be a vegetable, what it be?</option>
-      <option value="q3">what is your best ever security question?</option>
-    </select>
-    <br><br>
-    <label for="answer">security question answer</label>
-    <input type="text" id="answer" name="answer">
-
-    <br><br>
-
-    <label for="bio">your bio:</label> <br>
-    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
-
-    <br><br>
-    <input type="submit" value="submit the form">
-
-  </form>
+  <header>
+    <h1>MarioClub</h1>
+  </header>
+  <section class="banner">
+    <img src="img/banner.png" alt="mario club welcome banner">
+    <div class="welcome">
+      <h2>Welcome to <br><span>Marioclub</span></h2>
+    </div>
+  </section>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/join.html" class="join">Join the club</a></li>
+      <li><a href="/news.html">Latest news</a></li>
+      <li><a href="games.html">New games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <h2>It's a me, Mario</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt debitis magnam eaque illo, quas iste dicta. Distinctio ipsum voluptatum ratione facere recusandae modi voluptatibus excepturi culpa accusantium. Aliquam maxime obcaecati, quos repellat assumenda nemo culpa facere itaque veritatis. Similique iure atque molestias, tempora ducimus sunt nobis repellendus dolores veniam vel? Quos in et ea ad ab neque nesciunt culpa reprehenderit repudiandae magni deserunt, amet accusamus fuga minus, quo ullam. Id.</p>
+    </article>
+    <ul class="images">
+      <li><img src="img/thumb-1.png" alt="mario thumb 1"></li>
+      <li><img src="img/thumb-2.png" alt="mario thumb 2"></li>
+    </ul>
+  </main>
+  <section class="join">
+    <h2>Join today!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui natus laboriosam in maxime, est cupiditate ullam quod quibusdam eveniet beatae.</p>
+    <form>
+      <input type="email" name="email" placeholder="Type email & hit enter" required>
+    </form>
+  </section>
+  <footer>
+    <p class="copyright">Copyright 2019 Marioclub</p>
+  </footer>
 
 </body>
 </html>
